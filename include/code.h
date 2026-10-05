@@ -96,7 +96,7 @@ void init_double_point_typedef(DoublePoint *point, double x, double y);
  */
 
 /* TODO: struct Calc { } */
-struct calc 
+struct Calc 
 {
     float a;
     float b;
@@ -108,5 +108,5 @@ struct calc
 };
 
 void init_calc(struct Calc *calc);
-/* TODO: void init_calc(struct Calc *calc); */
+
 #endif

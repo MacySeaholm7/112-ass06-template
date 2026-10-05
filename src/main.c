@@ -9,10 +9,11 @@
  */
 
 #include <stdio.h>
+#include "code.h"
 
-int main(void)
+int main()
 {
-     // Test Step 1: int_Point
+    // Test Step 1: int_Point
     struct int_Point p1;
     init_int_point(&p1, 10, 20);
     printf("int_Point: x=%d, y=%d\n", p1.x, p1.y);

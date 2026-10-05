@@ -113,7 +113,7 @@ double apply_operation(float *arr, int length, float (*operation)(float, float))
 {
    float result  = arr[0];
 
-   for (int = i; i < length; i++ )
+   for (int i = 1; i < length; i++ )
    {
         result = operation(result, arr[i]);
    }
@@ -163,10 +163,10 @@ void init_double_point_typedef(DoublePoint *point, double x, double y)
 
 void init_calc(struct Calc *calc)
 {
-    calc-> a = 0.0f;
-    calc-> b = 0.0f;
+    calc->a = 0.0f;
+    calc->b = 0.0f;
 
-    calc-> add = add;
+    calc->add = add; 
     calc-> sub = sub;
     calc-> mul = mul;
     calc-> div = divide;
